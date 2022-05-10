@@ -11,6 +11,7 @@ export default class DSSanPham extends Component {
               key={sp.maSP}
               sanPham={sp}
               onXemChiTietClick={this.props.onXemChiTietClick}
+              onChangeSoLuongClick={this.props.onChangeSoLuongClick}
             />
           );
         })}

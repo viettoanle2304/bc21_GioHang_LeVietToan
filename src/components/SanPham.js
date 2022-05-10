@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { giaTriTang } from "../utils/constants";
 
 export default class SanPham extends Component {
   render() {
@@ -21,7 +22,17 @@ export default class SanPham extends Component {
             >
               Xem chi tiết
             </button>
-            <button className="btn btn-danger mx-2">Thêm giỏ hàng</button>
+            <button
+              className="btn btn-danger mx-2"
+              onClick={() =>
+                this.props.onChangeSoLuongClick(
+                  this.props.sanPham.maSP,
+                  giaTriTang
+                )
+              }
+            >
+              Thêm giỏ hàng
+            </button>
           </div>
         </div>
       </div>
