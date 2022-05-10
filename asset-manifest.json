@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bc21_giohang_leviettoan/static/css/main.fb4b8d6d.css",
-    "main.js": "/bc21_giohang_leviettoan/static/js/main.7d1a91e6.js",
+    "main.js": "/bc21_giohang_leviettoan/static/js/main.0dcfd24c.js",
     "static/js/787.cafa89e8.chunk.js": "/bc21_giohang_leviettoan/static/js/787.cafa89e8.chunk.js",
     "static/media/iphone-xs-max.jpg": "/bc21_giohang_leviettoan/static/media/iphone-xs-max.acca64b53a44bad85528.jpg",
     "static/media/meizu-16Xs.jpg": "/bc21_giohang_leviettoan/static/media/meizu-16Xs.6ae702039daaebf438ad.jpg",
@@ -9,11 +9,11 @@
     "static/media/logo.svg": "/bc21_giohang_leviettoan/static/media/logo.6ce24c58023cc2f8fd88.svg",
     "index.html": "/bc21_giohang_leviettoan/index.html",
     "main.fb4b8d6d.css.map": "/bc21_giohang_leviettoan/static/css/main.fb4b8d6d.css.map",
-    "main.7d1a91e6.js.map": "/bc21_giohang_leviettoan/static/js/main.7d1a91e6.js.map",
+    "main.0dcfd24c.js.map": "/bc21_giohang_leviettoan/static/js/main.0dcfd24c.js.map",
     "787.cafa89e8.chunk.js.map": "/bc21_giohang_leviettoan/static/js/787.cafa89e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb4b8d6d.css",
-    "static/js/main.7d1a91e6.js"
+    "static/js/main.0dcfd24c.js"
   ]
 }
