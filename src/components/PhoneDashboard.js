@@ -11,7 +11,7 @@ export default class PhoneDashboard extends Component {
   };
 
   componentDidMount() {
-    const dssp = modelDataPhone.map((sp) => ({ ...sp, soLuong: 0 }));
+    const dssp = modelDataPhone.map((sp) => ({ ...sp, soLuong: 0, newAdd: 0 }));
 
     // console.log(dssp);
     this.setState({
@@ -31,9 +31,13 @@ export default class PhoneDashboard extends Component {
   handleChangeSoLuong = (idSP, giaTri) => {
     const dssp = this.state.dsspDienThoai.map((sp) => {
       if (sp.maSP === idSP) {
-        return { ...sp, soLuong: sp.soLuong + giaTri };
+        if (sp.soLuong + giaTri > 0) {
+          return { ...sp, soLuong: sp.soLuong + giaTri, newAdd: 1 };
+        } else return { ...sp, soLuong: sp.soLuong + giaTri, newAdd: 0 };
       } else return { ...sp };
     });
+
+    dssp.sort((a, b) => b.newAdd - a.newAdd);
 
     this.setState(
       {
@@ -53,7 +57,7 @@ export default class PhoneDashboard extends Component {
         />
 
         <DSSanPham
-          dssp={this.state.dsspDienThoai}
+          dssp={modelDataPhone}
           onXemChiTietClick={this.handleXemChiTiet}
           onChangeSoLuongClick={this.handleChangeSoLuong}
         />
